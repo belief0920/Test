@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<!-- 자동 의존 주입  -->
+	<context:annotation-config />
+
+
+	<!-- 
+	  핸들러매핑은 디폴트 사용
+	 뷰리졸버는 namespaces mvc 체크 후 좀 더 코드를 직관적으로
+	 볼 수 있게 사용.
+	-->
+	<mvc:view-resolvers>
+		<mvc:jsp prefix="/views/" suffix=".jsp"/>
+	</mvc:view-resolvers>
+</beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 컨트롤러와 일반 빈을 등록하는 곳  -->
+	<bean id="main" class="kr.co.jhta.web.controller.MainController" />
+	<bean id="join" class="kr.co.jhta.web.controller.JoinController" />
+	<bean id="login" class="kr.co.jhta.web.controller.LoginController" />
+	
+	<!-- dao bean  -->
+	<bean id="mem" class="kr.co.jhta.web.dao.MemDAO" />
+	
+	
+
+	
+
+</beans>
