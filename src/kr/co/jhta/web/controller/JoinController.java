@@ -30,7 +30,7 @@ public class JoinController {
 		if(!result) {
 			return "join";
 		}
-		
+
 		return "joinOk";
 	}
 }

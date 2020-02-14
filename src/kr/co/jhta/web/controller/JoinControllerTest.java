@@ -22,6 +22,7 @@ class JoinControllerTest {
 		MemDTO dto = new MemDTO();
 		
 		
+		
 	}
 
 }
